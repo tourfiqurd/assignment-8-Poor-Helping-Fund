@@ -1,0 +1,29 @@
+.main-header {
+    text-align: center;
+    color: darkslategrey;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.main-desc {
+    text-align: left;
+    padding-bottom: 20px;
+    text-align: center;
+    color: darkolivegreen;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.budget-desc {
+    text-align: center;
+    padding-bottom: 20px;
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.heading {
+    padding: 20px;
+    width: 70%;
+}

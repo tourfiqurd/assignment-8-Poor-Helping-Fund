@@ -1,0 +1,51 @@
+.poets-container {
+
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 15px grey;
+    width: 220px;
+    line-height: 15px;
+    height: 550px;
+    padding: 10px;
+
+
+
+
+
+
+}
+
+
+
+
+
+.cart-image {
+
+    height: 210px;
+    width: 220px;
+}
+
+.cart-desc h2 {
+    color: darkslateblue;
+    line-height: 25px;
+    text-align: center;
+}
+
+.cart-desc p {
+    color: gray;
+
+}
+
+.cart-desc button {
+    background-color: darkslategrey;
+    padding: 10px 15px;
+    border: 2px solid rgb(9, 4, 42);
+    margin-bottom: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.cart-desc button:hover {
+    background-color: darkslateblue;
+    cursor: pointer;
+
+}

@@ -1,0 +1,53 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.cart-container {
+
+
+    box-shadow: 10px 10px 15px grey;
+
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    text-align: center;
+
+
+
+
+
+
+
+
+
+
+}
+
+.added-poets-container {
+    box-shadow: 10px 10px 15px grey;
+
+    position: fixed;
+    top: 280px;
+    right: 20px;
+    width: 200px;
+
+    text-align: center;
+
+}
+
+.cart-total-container h1 {
+    color: darkslateblue;
+}
+
+.cart-added-container h5 {
+    color: darkslateblue;
+}
+
+.carts-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-column-gap: 20px;
+
+}
