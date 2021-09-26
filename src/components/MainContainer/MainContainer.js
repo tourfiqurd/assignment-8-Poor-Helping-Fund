@@ -14,20 +14,38 @@ const MainContainer = () => {
     const [total, setTotal] = useState(0)
     const [finalName, setName] = useState([])
 
+
     const hadleTotal = (WantsToDeonate, name) => {
-        const newTotal = total + WantsToDeonate
-        setTotal(newTotal)
-        const newName = [...finalName, name]
-        setName(newName)
+
+
+        if (finalName.indexOf(name) != -1) {
+            alert("Cannot add multiple times")
+            return
+
+        } else {
+            const newTotal = total + WantsToDeonate
+            setTotal(newTotal)
+            const newName = [...finalName, name]
+            setName(newName)
+
+        }
+
+
+
     }
-    console.log(finalName)
+
+
+
+
     return (
+
         <div className="main-container">
 
             <div className="carts-container">
 
                 {
-                    poets.map(poet => <Poets poet={poet} key={poet.key} hadleTotal={hadleTotal}></Poets>)
+                    poets.map(poet => <Poets poet={poet} hadleTotal={hadleTotal} key={poet.key.length.toString()}></Poets>)
+
                 }
 
 
@@ -49,7 +67,7 @@ const MainContainer = () => {
                     <h5>Groups Helped Us</h5>
 
                     {
-                        finalName.map(singleName => <p>{singleName}</p>)
+                        finalName.map(singleName => <p key={singleName}>{singleName}</p>)
                     }
 
                 </div>
@@ -59,6 +77,7 @@ const MainContainer = () => {
 
         </div >
     );
+
 };
 
 export default MainContainer;
